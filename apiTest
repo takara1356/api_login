@@ -1,0 +1,10 @@
+POST /api/v1/users/sign_in HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+cache-control: no-cache
+Postman-Token: 444ac35a-01d8-48ed-8302-1456ff7acd57
+
+{
+  "email": "takara2@example.com",
+  "password": "password"
+}
