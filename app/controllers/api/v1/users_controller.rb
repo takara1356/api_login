@@ -2,7 +2,7 @@ class Api::V1::UsersController < ApplicationController
   skip_before_action :authenticate!, only: [ :create, :sign_in ]
 
   def create
-    @user = User.new(email: params[:email], password: params[:password], name: params[:name])
+    @user = User.new(email: params[:email], password: params[:password], password_confirmation: params[:password_confirmation])
 
     if @user.save
       render json: @user
